@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodic Table Information Finder</title>
+    
+    <!-- PyScript -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Non-Metal Elements</h1>
+            <p>Periodic Table Information Finder</p>
+        </header>
+
+        <section class="search-box">
+            <h2>Find an element</h2>
+            <p>Enter a non-metal or its symbol to discover its properties.</p>
+
+            <label for="symbol">Element Symbol</label>
+            <input type="text" id="symbol" placeholder="Enter element here">
+
+            <button type="button" py-click="check_element">Search Element</button>
+        </section>
+
+        <section class="result-box">
+            <h2>Element Information</h2>
+            <div id="result">
+            The details of your elememnt will appear here.
+            </div>
+        </section>
+
+        <!-- Footer -->
+    <footer>
+        ICT 10 | 2nd Quarter Skills Test
+    </footer>
+
+    <!-- Python -->
+    <script type="py" src="main.py"></script>
+    </div>
+</body>
+</html>
